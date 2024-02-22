@@ -35,5 +35,10 @@ namespace Library_Management_System
                 
             }
         }
+
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
