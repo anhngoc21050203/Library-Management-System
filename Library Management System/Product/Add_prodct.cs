@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Library_Management_System
 {
-    public partial class Dashboard : Form
+    public partial class Add_prodct : Form
     {
-        public Dashboard()
+        public Add_prodct()
         {
             InitializeComponent();
+        }
+
+        private void btnCancelAddBook_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

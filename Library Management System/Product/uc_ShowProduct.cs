@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Library_Management_System.Product
 {
-    public partial class uc_Addproduct : UserControl
+    public partial class uc_ShowProduct : UserControl
     {
-        public uc_Addproduct()
+        public uc_ShowProduct()
         {
             InitializeComponent();
+        }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            Add_prodct addproduct = new Add_prodct();
+            addproduct.ShowDialog();
         }
     }
 }

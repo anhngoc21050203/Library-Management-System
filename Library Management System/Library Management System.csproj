@@ -52,11 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashboard.cs">
+    <Compile Include="Product\Add_prodct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="Product\Add_prodct.Designer.cs">
+      <DependentUpon>Add_prodct.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -70,16 +70,16 @@
     <Compile Include="frmLibrary.Designer.cs">
       <DependentUpon>frmLibrary.cs</DependentUpon>
     </Compile>
-    <Compile Include="Product\uc_Addproduct.cs">
+    <Compile Include="Product\uc_ShowProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Product\uc_Addproduct.Designer.cs">
-      <DependentUpon>uc_Addproduct.cs</DependentUpon>
+    <Compile Include="Product\uc_ShowProduct.Designer.cs">
+      <DependentUpon>uc_ShowProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Product\Add_prodct.resx">
+      <DependentUpon>Add_prodct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLibrary.resx">
       <DependentUpon>frmLibrary.cs</DependentUpon>
@@ -87,8 +87,8 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Product\uc_Addproduct.resx">
-      <DependentUpon>uc_Addproduct.cs</DependentUpon>
+    <EmbeddedResource Include="Product\uc_ShowProduct.resx">
+      <DependentUpon>uc_ShowProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
