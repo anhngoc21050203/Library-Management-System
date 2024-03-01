@@ -70,6 +70,18 @@
     <Compile Include="frmLibrary.Designer.cs">
       <DependentUpon>frmLibrary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Payment\Sach1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payment\Sach1.Designer.cs">
+      <DependentUpon>Sach1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\uc_Thanhtoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payment\uc_Thanhtoan.Designer.cs">
+      <DependentUpon>uc_Thanhtoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product\uc_Addproduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +98,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\Sach1.resx">
+      <DependentUpon>Sach1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\uc_Thanhtoan.resx">
+      <DependentUpon>uc_Thanhtoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Product\uc_Addproduct.resx">
       <DependentUpon>uc_Addproduct.cs</DependentUpon>
