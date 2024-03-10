@@ -30,57 +30,58 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sach1));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblCost = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblImage)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel1.Controls.Add(this.lblCost);
+            this.guna2Panel1.Controls.Add(this.lblTitle);
+            this.guna2Panel1.Controls.Add(this.lblImage);
             this.guna2Panel1.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(568, 120);
+            this.guna2Panel1.Size = new System.Drawing.Size(644, 120);
             this.guna2Panel1.TabIndex = 0;
+            this.guna2Panel1.Click += new System.EventHandler(this.guna2Panel1_Click);
             // 
-            // label2
+            // lblCost
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(123, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 28);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "10$";
+            this.lblCost.AutoSize = true;
+            this.lblCost.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCost.Location = new System.Drawing.Point(123, 72);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(45, 28);
+            this.lblCost.TabIndex = 2;
+            this.lblCost.Text = "10$";
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(124, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tên sách";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(124, 13);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(75, 23);
+            this.lblTitle.TabIndex = 1;
+            this.lblTitle.Text = "Tên sách";
             // 
-            // guna2PictureBox1
+            // lblImage
             // 
-            this.guna2PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2PictureBox1.ErrorImage = null;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.InitialImage = null;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(98, 114);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            this.lblImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lblImage.ErrorImage = null;
+            this.lblImage.Image = ((System.Drawing.Image)(resources.GetObject("lblImage.Image")));
+            this.lblImage.ImageRotate = 0F;
+            this.lblImage.InitialImage = null;
+            this.lblImage.Location = new System.Drawing.Point(3, 3);
+            this.lblImage.Name = "lblImage";
+            this.lblImage.Size = new System.Drawing.Size(98, 114);
+            this.lblImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.lblImage.TabIndex = 0;
+            this.lblImage.TabStop = false;
+            this.lblImage.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // Sach1
             // 
@@ -89,11 +90,11 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Sach1";
-            this.Size = new System.Drawing.Size(574, 126);
+            this.Size = new System.Drawing.Size(650, 126);
             this.Load += new System.EventHandler(this.Sach1_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -101,8 +102,8 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        public Guna.UI2.WinForms.Guna2PictureBox lblImage;
+        public System.Windows.Forms.Label lblCost;
+        public System.Windows.Forms.Label lblTitle;
     }
 }

@@ -72,6 +72,7 @@
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
             // 
             // guna2ContextMenuStrip2
             // 
@@ -87,6 +88,7 @@
             this.guna2ContextMenuStrip2.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip2.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            this.guna2ContextMenuStrip2.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip2_Opening);
             // 
             // guna2Panel2
             // 
@@ -95,6 +97,7 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(775, 500);
             this.guna2Panel2.TabIndex = 8;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // guna2DataGridView1
             // 
@@ -147,6 +150,7 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // guna2Panel3
             // 
@@ -155,6 +159,7 @@
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(1250, 56);
             this.guna2Panel3.TabIndex = 9;
+            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
             // guna2HtmlLabel1
             // 
@@ -165,6 +170,7 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(140, 47);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Payment";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click_1);
             // 
             // guna2Panel4
             // 
@@ -175,6 +181,7 @@
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(1250, 75);
             this.guna2Panel4.TabIndex = 10;
+            this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
             // 
             // guna2DateTimePicker1
             // 
@@ -191,6 +198,7 @@
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(235, 37);
             this.guna2DateTimePicker1.TabIndex = 9;
             this.guna2DateTimePicker1.Value = new System.DateTime(2024, 2, 27, 21, 7, 0, 967);
+            this.guna2DateTimePicker1.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged_1);
             // 
             // guna2TextBox1
             // 
@@ -225,6 +233,7 @@
             this.label1.Size = new System.Drawing.Size(57, 23);
             this.label1.TabIndex = 7;
             this.label1.Text = "Search";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // guna2BorderlessForm1
             // 
@@ -247,6 +256,7 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Gainsboro;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(469, 557);
             this.guna2ShadowPanel1.TabIndex = 11;
+            this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
             // guna2Panel1
             // 
@@ -257,6 +267,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(463, 177);
             this.guna2Panel1.TabIndex = 4;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // label4
             // 
@@ -267,6 +278,7 @@
             this.label4.Size = new System.Drawing.Size(77, 45);
             this.label4.TabIndex = 5;
             this.label4.Text = "$10";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // guna2Button2
             // 
@@ -282,6 +294,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(324, 58);
             this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "Pay";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // label3
             // 
@@ -292,6 +305,7 @@
             this.label3.Size = new System.Drawing.Size(73, 31);
             this.label3.TabIndex = 3;
             this.label3.Text = "Total:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // guna2Button1
             // 
@@ -307,6 +321,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(78, 31);
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = "Delete";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label2
             // 
@@ -317,6 +332,7 @@
             this.label2.Size = new System.Drawing.Size(85, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên sách";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // uc_Thanhtoan
             // 
